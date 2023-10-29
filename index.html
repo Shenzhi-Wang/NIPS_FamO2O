@@ -56,13 +56,39 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://shenzhi-wang.netlify.app/" target="_blank">Shenzhi Wang</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                Qisen Yang<sup>*</sup>,
+              </span>
+              <span class="author-block">
+                  Jiawei Gao,
+              </span>
+
+              <span class="author-block">
+                Matthieu Lin,
+              </span>
+
+              <span class="author-block">
+                Hao Chen,
+              </span>
+
+              <span class="author-block">
+                Liwei Wu,
+              </span>
+
+              <span class="author-block">
+                Ning Jia,
+              </span>
+
+              <span class="author-block">
+                Shiji Song,
+              </span>
+
+              <span class="author-block">
+                Gao Huang,
+              </span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
@@ -123,7 +149,7 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser Image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -145,10 +171,28 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+
+        <h2 class="title is-3">TL;DR</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose FamO2O, a simple yet effective framework that empowers existing offline-to-online RL algorithms to determine state-adaptive improvement-constraint balances.
+            FamO2O utilizes a <em>universal model</em>to train a family of policies with different improvement/constraint intensities, and a <em>balance model</em> to select a suitable policy for each state.
+          </p>
+        </div>
+
+
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Offline-to-online reinforcement learning (RL) is a training paradigm that combines pre-training on a pre-collected dataset with fine-tuning in an online environment.
+            However, the incorporation of online fine-tuning can intensify the well-known distributional shift problem.
+            Existing solutions tackle this problem by imposing a <em>policy constraint</em> on the <em>policy improvement</em> objective in both offline and online learning.
+            They typically advocate a single balance between policy improvement and constraints across diverse data collections. 
+            This one-size-fits-all manner may not optimally leverage each collected sample due to the significant variation in data quality across different states.
+            To this end, we introduce Family Offline-to-Online RL (FamO2O), a simple yet effective framework that empowers existing algorithms to determine state-adaptive improvement-constraint balances.
+            FamO2O utilizes a <em>universal model</em>to train a family of policies with different improvement/constraint intensities, and a <em>balance model</em> to select a suitable policy for each state.
+            Theoretically, we prove that state-adaptive balances are necessary for achieving a higher policy performance upper bound.
+            Empirically, extensive experiments show that FamO2O offers a statistically significant improvement over various existing methods, achieving state-of-the-art performance on the D4RL benchmark.
           </p>
         </div>
       </div>
