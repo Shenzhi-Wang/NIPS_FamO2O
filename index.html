@@ -78,7 +78,7 @@
               </span>
 
               <span class="author-block">
-                Ning Jia,<sup>2</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=-NcJbxoAAAAJ" target="_blank">Ning Jia</a><sup>2</sup>,</span>
               </span>
 
               <span class="author-block">
@@ -208,13 +208,23 @@
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Experimental Evaluations</h2> <br>
+
+        <img src="static/images/family_baseline.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Comparisons between our FamO2O against various competitors on D4RL normalized scores.</b> 
+          All methods are tested on D4RL Locomotion and AntMaze for 6 random seeds. 
+          FamO2O achieves state-of-the-art performance by a statistically significant margin among all the competitors
+          in offline-to-online RL(i.e. IQL, Balaned Replay (BR), CQL, AWAC, and TD3+BC), online RL(i.e. SAC), and behavior cloning (BC).
+        </h2>
+        
+        <br><br><br>
+        
+        <img src="static/images/result_table.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           <b>Enhanced performance achieved by FamO2O after online fine-tuning.</b> 
           We evaluate the D4RL normalized score of standard base algorithms (including AWAC and IQL, denoted
           as "Base") in comparison to the base algorithms augmented with FamO2O (referred to as "Ours").
-          <b>FamO2O consistently delivers statistically significant performance enhancements across different algorithms and task sets.</b> 
         </h2>
-        <img src="static/images/result_table.png" alt="MY ALT TEXT"/>
         
         <br><br><br>
         
