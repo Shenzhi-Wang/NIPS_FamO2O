@@ -217,8 +217,17 @@
         <img src="static/images/framework_new.jpg" alt="MY ALT TEXT" style="width: 80%;"/>
         <h2 class="subtitle has-text-centered">
           <b>FamO2O’s inference process.</b> 
-          For each state \(\mathbf{s}\), the balance model \(\pi_b\) computes a state-adaptive balance coefficient \(\beta_\s\).
-          Based on \(\mathbf{s}\) and \(\beta_\s]), the universal model \(\pi_u\) outputs an action \(\mathbf{a}\).
+          For each state \(\mathbf{s}\), the balance model \(\pi_b\) computes a state-adaptive balance coefficient \(\beta_\mathbf{s}\).
+          Based on \(\mathbf{s}\) and \(\beta_\mathbf{s}]), the universal model \(\pi_u\) outputs an action \(\mathbf{a}\).
+        </h2>
+        <br><br><br>
+
+        <img src="static/images/toy_example.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <b>State-wise adaptivity visualization in a simple maze environment.</b> 
+          (a) Higher data quality at the crossing point in the 5th row compared to the 2nd row. 
+          (b) Colors denote different balance coefficient values at traversed cells during inference. 
+          FamO2O typically displays conservative (or radical) behavior at cells with high-quality (or low-quality) data
         </h2>
         <br><br><br>
 
